@@ -46,7 +46,7 @@ def total_gross(source)
   
   total = 0
   d_names = list_of_directors(source)
-  d_totals = directors_totals()
+  d_totals = directors_totals(source)
   for name in d_names do
     total += d_totals[name]
   end
