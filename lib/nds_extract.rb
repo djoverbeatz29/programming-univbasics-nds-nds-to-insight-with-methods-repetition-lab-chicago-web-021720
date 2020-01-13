@@ -26,6 +26,11 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+  dir_list = []
+  for director in source do
+    dir_list.push(director[:name])
+  end
+  dir_list
 end
 
 def total_gross(source)
