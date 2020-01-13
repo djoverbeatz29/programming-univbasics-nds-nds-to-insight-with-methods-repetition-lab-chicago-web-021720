@@ -6,3 +6,10 @@ def directors_totals(source)
   result
 end
 
+def gross_for_director(d)
+  total = 0
+  for movie in d[:movies] do
+    total += movie[:worldwide_gross]
+  end
+  total
+end
